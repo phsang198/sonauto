@@ -1,0 +1,31 @@
+body {
+    /*width: 100%;*/
+}
+body * {
+    /*max-width: 100%;*/
+}
+.servinfo{
+    page-break-after: always;
+}
+.servinfo:last-child{
+    page-break-after: auto;
+}
+div.graphic {
+    /*width: 90%;*/
+}
+.docinfo {
+    display: block;
+    line-height: 1.4em;
+    padding: .2em;
+    color: white;
+    background-color: black;
+    clear: both;
+}
+.pathlist {
+    display: block;
+    line-height: 1.4em;
+    padding: .2em;
+    color: white;
+    background-color: darkred;
+    clear: both;
+}

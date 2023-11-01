@@ -1,0 +1,662 @@
+﻿@charset "utf-8";
+
+body {
+    padding: .5em;
+}
+body.JPN {
+    font-family: "ＭＳ Ｐゴシック",Verdana,Arial,Meiryo,"Hiragino Kaku Gothic Pro",sans-serif;
+}
+body.ENG,
+body.USA {
+    font-family: Arial,"ＭＳ Ｐゴシック",Verdana,Meiryo,"Hiragino Kaku Gothic Pro",sans-serif;
+}
+
+h1.top {
+    font-size: 2em;
+    margin-top: 1em;
+    font-weight: bold;
+    border-top:0px;
+}
+
+h2.top {
+    font-size: 1.5em;
+    margin-top: 1em;
+    font-weight: bold;
+    border-top:0px;
+}
+img.top-logo {
+    margin-bottom: 1em;
+}
+div.top-usage {
+    margin-top: 1em;
+}
+div.top-usage-title {
+    margin-top: .5em;
+    margin-left: .5em;
+}
+ul.top-usage-desc {
+    margin-top: .5em;
+    line-height: 1.5em;
+}
+
+div.modelname {
+    width: 100%;
+    text-align: center;
+    background-color: #303030;
+    color: white;
+    line-height: 1.6em;
+    vertical-align: middle;
+    margin-bottom: .1em;
+}
+div.labelvalue {
+    display: table;
+    line-height: 1.7em;
+    vertical-align: bottom;
+}
+div.labelvalue .label {
+    display: table-cell;
+    width: 4em;
+}
+div.labelvalue .value {
+    display: table-cell;
+}
+
+div.svg {
+  position: relative;
+  display: inline-block; 
+  cursor: pointer;
+}
+div.svg:after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+  background-color: white;
+  opacity: 0.01;
+}
+div.svg object {
+  border: solid 1px blue;
+}
+
+.searchbar {
+  padding: .2em;
+  overflow: hidden;
+}
+div.print {
+    display: inline-block;
+}
+div.seach {
+    display: inline-block;
+}
+
+#printbutton {
+    position: absolute;
+    top: 10px;
+    left: .5em;
+    width: 9em;
+}
+#printgroupbutton {
+    position: absolute;
+    top: 10px;
+    left: 10em;
+    width: 9em;
+}
+#filter {
+    margin:0em auto 1em auto;
+    width: 90%;
+    display:block;
+    padding:4px;
+    border-radius:4px;
+    border:1px solid silver;
+}
+#searchbox {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    width: 300px;
+    display:inline;
+    padding:4px;
+    border-radius:4px;
+    border:1px solid silver;
+}
+#searchbutton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline;
+    width: 22px;
+    height: 23px;
+}
+.searchPager {
+	position:relative;
+	width: 100%;
+	text-align: center;
+	margin: 10px 0;
+	padding: 5px 0 10px 0;
+	border-bottom: 1px solid #C0C0C0;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.searchPagerNo {
+	position: relative;
+	float: left;
+	margin: 0 5px;
+	left: 50%;
+	list-style:none;
+}
+
+.searchPagerNo li {
+	float: left;
+	position: relative;
+	left: -50%;
+	min-width: 18px;
+	height: 18px;
+}
+
+.searchPagerNo li a {
+	display: block;
+	min-width: 18px;
+	height: 18px;
+	margin: 0 1px;
+	padding: 2px 3px;
+	border: 1px solid #C0C0C0;
+	color: #000;
+	line-height: 1.3;
+}
+
+.searchPagerNo li a.viewing {
+	display: block;
+	min-width: 18px;
+	height: 18px;
+	margin: 0 1px;
+	padding: 2px 3px;
+	border: 1px solid #C0C0C0;
+	background: #C0C0C0;
+	color: #fff;
+}
+
+.searchPagerNo li.searchPagerPrev a {
+	float: left;
+	margin: 5px 5px 0 0;
+	padding: 0 0 0 10px;
+	border: none;
+	color: #000;
+	text-decoration:none;
+}
+
+.searchPagerNo li.searchPagerNext a {
+	float: left;
+	margin: 5px 0 0 5px;
+	padding: 0 10px 0 0;
+	border: none;
+	color: #000;
+	text-decoration:none;
+}
+
+.searchResultsHeader {
+}
+
+.searchContainer {
+	margin: 0 0 10px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid #C0C0C0;
+}
+
+.searchResultItem {
+	margin: 0 15px 0 15px;
+}
+
+.searchResultItem a:link,
+.searchResultItem a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+.searchResultItem a:hover,
+.searchResultItem a:active {
+	text-decoration: underline;
+}
+
+.searchContainer p {
+	margin: 5px 15px 10px 15px;
+}
+
+.searchResultItem {
+}
+
+.searchResultPath {
+	padding-left: 15px;
+	margin-bottom: 3px;
+    font-size: 0.8em;
+    font-style: italic;
+    color: #A0A0A0;
+}
+
+.docinfo {
+    display: none;
+}
+
+.pathlist {
+    display: none;
+}
+
+
+
+
+
+/**************************************************************************************************
+*
+* 大きい見出し配置設定
+*
+***************************************************************************************************/
+/* attention (見出し配置で変わるのでここで幅を指定) */
+table[class^="attention"] {
+    width: 100%;
+}
+
+/* 左寄せ画像がある時、他の要素を右寄せ設定する */
+.sideway > div:not([class^="figureleft"]),
+.sideway > table,
+.sideway > ul,
+.sideway > span
+{
+    float:right;
+    width:70%;
+}
+
+/* 右寄せが二重になっている場合、二重にはしない */
+.sideway .sideway > div:not([class^="figureleft"]),
+.sideway .sideway > table,
+.sideway .sideway > ul,
+.sideway .sideway > span
+{
+    width:100%;
+}
+
+
+/* figureleftside */
+.sideway .figureleftparent
+{
+    clear:both;
+}
+.sideway .figureleftside
+{
+    position:absolute;
+    left:0px;
+}
+.sideway .figureleftdamy
+{
+    float:left;
+    /* 非表示の設定(visibility:hidden;)はxsl側に記述 */
+}
+.sideway .sideway .figureleftdamy 
+{
+    margin-left:-40%;
+}
+
+
+/**************************************************************************************************
+*
+* 要素別
+*
+***************************************************************************************************/
+/* attention1 ～ 4 */
+table[class^="attention"] {
+    border: 1px solid #666677;
+    background-color: #ffffff;
+    height:auto;
+}
+table[class^="attention"] + table[class^="attention"] {
+    margin-top: 5px;
+}
+table[class^="attention"] > tbody > tr > td {
+    padding: 2px;
+    border: 1px solid #666677;
+}
+table[class^="attention"] > tbody > tr > td:nth-child(1) {
+    width: 60px;
+    font-weight: bold;
+}
+table.attention1 > tbody > tr > td {
+    background-color: #ffffaa;
+}
+table.attention2 > tbody > tr > td {
+    background-color: #ffaaaa;
+}
+table.attention3 > tbody > tr > td {
+    background-color: #aaaaff;
+}
+table.attention4 > tbody > tr > td {
+    background-color: #ff5555;
+}
+
+
+/* servinfosub, topic, testgrp */
+.servinfosubline,
+.topicline
+{
+    clear:both;
+    padding-top:10px;
+}
+.servinfosubline > div > div,
+.topicline > div > div
+{
+    border-bottom:solid 2px darkgray;
+    margin:0 auto;
+}
+.servinfosubline > div.damy,
+.topicline > div.damy
+{
+    visibility:hidden;
+}
+.servinfosubline > div.view,
+.topicline > div.view
+{
+    position:absolute;
+    left:0;
+    width:100%;
+}
+/* 異なる部分 */
+.servinfosubline > div.view > div
+{
+    width:90%;
+}
+.topicline > div.view > div
+{
+    width:70%;
+}
+/* 余白設定 */
+div.servinfosub,
+div.topic
+{
+    padding-top:10px;
+}
+
+
+
+
+
+
+/**************************************************************************************************
+*
+* タイトル別
+*
+***************************************************************************************************/
+/* servinfo */
+div[class^="servinfo"] > .title,
+div[class^="servinfo"] > .titlebox,
+div[class^="servinfo"] > div.sideway > .title,
+div[class^="servinfo"] > div.sideway > .titlebox
+{
+    margin-bottom:40px;
+    font-weight: bold;
+    font-size: 24pt;
+}
+/* servinfosub */
+div[class^="servinfosub"] > .title,
+div[class^="servinfosub"] > .titlebox,
+div[class^="servinfosub"] > div.sideway > .title,
+div[class^="servinfosub"] > div.sideway > .titlebox,
+div[class^="testgrp"] > .title,
+div[class^="testgrp"] > div.sideway > .title
+{
+    margin-top:20px;
+    margin-bottom:20px;
+    font-weight: bold;
+    font-size: 18pt;
+}
+div[class^="topic"] > .title,
+div[class^="topic"] > div.sideway > .title
+{
+    margin-top:20px;
+    margin-bottom:20px;
+    font-weight: bold;
+    font-size: 14pt;
+}
+/* titlebox の dtctype */
+.dtctype
+{
+    font-size:12px;
+    padding:5px 0px 0px 0px;
+}
+
+.entry > .title,
+.list1 > .title,
+.list2 > .title,
+.list3 > .title,
+.list4 > .title,
+.table > .title,
+.figure > .title,
+.figure > table > tbody > tr > td > .title,
+.figureconfiguration > .title,
+.figureconfiguration > table tbody > tr > td > .title
+{
+    font-weight: bold;
+}
+
+/**************************************************************************************************
+*
+* 要素別
+*
+***************************************************************************************************/
+
+/* comment */
+.comment
+{
+    font-style:italic;
+    color:brown;
+}
+
+/* 参照設定 */
+.extxref
+{
+    color:green;
+}
+.intxref
+{
+    color:blue;
+}
+.intxref > .noref, 
+.extxref > .noref
+{
+    background-color:#fe5555;
+}
+
+
+/* s1 */
+.s1 
+{
+}
+.s1 > .step
+{
+    font-weight:bold;
+    text-align:right;
+}
+/* s2 */
+.s2
+{
+}
+.s2 > .step
+{
+}
+/* s3 */
+.s3
+{
+}
+.s3 > .step
+{
+}
+
+
+/* 画像系統 */
+.figure
+{
+    margin-top:2px;
+    margin-bottom:2px;
+}
+.figureconfiguration
+{
+    margin-top:1px;
+    margin-bottom:1px;
+}
+.graphic
+{
+    padding:2px;
+}
+.graphic img
+{
+    border:solid 2px #0973f5;
+}
+
+
+/* break */
+.break
+{
+    color:#bbbbbb;
+}
+
+/* spec */
+.spec
+{
+    font-weight:bold;
+}
+
+/* tableのスタイル */
+.table
+{
+    margin-top:3px;
+}
+thead.thead > tr.row > td.entry
+{
+    font-weight:bold;
+}
+td.entry
+{
+    position: relative;
+}
+/* tablerightside */
+.tablerightside > table
+{
+    width:100%;
+}
+.tablerightside > table > tbody > tr > td:nth-child(2)
+{
+    width:70%;
+}
+
+
+
+
+/* 故障診断 */
+/* diagnostic */
+.diagnostic
+{
+    clear:both;
+}
+/* questiion */
+.question::before
+{
+    font-weight:bold;
+    font-size:14pt;
+    content:"Q.";
+}
+.question
+{
+    padding-top:20px;
+    padding-bottom:20px;
+    font-weight:bold;
+    font-size:14pt;
+}
+/* action,resultの親 */
+.rslt-act + .rslt-act
+{
+    padding-top:12px;
+}
+/* result */
+a.result img
+{
+    border:solid 2px #0973f5;
+}
+/* test1 */
+.test1
+{
+    margin-top:3px;
+    margin-bottom:3px;
+}
+/* test2 */
+.test2
+{
+    margin-top:3px;
+    margin-bottom:3px;
+    margin-left:22px;
+}
+
+
+/**************************************************************************************************
+*
+* 属性別
+*
+***************************************************************************************************/
+/* リスト行頭文字 */
+.bullet
+{
+    list-style-type:disc;
+}
+.arabicnum
+{
+    list-style-type:decimal;
+}
+.loweralpha
+{
+    list-style-type:lower-alpha;
+}
+.lowerroman
+{
+    list-style-type:lower-roman;
+}
+.unlabeled
+{
+    list-style-type:none;
+}
+
+/* 表の罫線 */
+.none
+{
+    border:none;
+}
+.all
+{
+    border:solid 1px #666677;
+}
+.top
+{
+    border-top:solid 1px #666677;
+}
+.bottom
+{
+    border-bottom:solid 1px #666677;
+}
+.topbot
+{
+    border-top:solid 1px #666677;
+    border-bottom:solid 1px #666677;
+}
+.sides
+{
+    border-left:solid 1px #666677;
+    border-right:solid 1px #666677;
+}
+/* セルのみ */
+.right
+{
+    border-right:solid 1px #666677;
+}
+.botright
+{
+    border-right:solid 1px #666677;
+    border-bottom:solid 1px #666677;
+}
+

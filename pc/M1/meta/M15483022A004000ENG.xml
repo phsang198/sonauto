@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meta_info>
+  <resinfo_items>
+    <sie_id>M15483022A004000</sie_id>
+    <sie_title>Diagnosis Item 12: Diagnose when the M.U.T.-IIISE cannot receive the data sent by ABS-ECU &lt;Vehicles without ASC&gt; or ASC-ECU &lt;Vehicles with ASC&gt;.</sie_title>
+    <language>ENG</language>
+    <html_file>../html/M15483022A004000ENG.html</html_file>
+    <original_destination id="004">General Export/Philippines/Egypt/Thailand/Vietnam/Peru</original_destination>
+    <model_year>19-20MY</model_year>
+    <document_type>M1</document_type>
+  </resinfo_items>
+  <toc_items>
+    <toc_group level="1">54 -CHASSIS ELECTRICAL</toc_group>
+    <toc_group level="2">54C-CONTROLLER AREA NETWORK (CAN)</toc_group>
+    <toc_title level="1">TROUBLESHOOTING</toc_title>
+    <toc_title level="2">CAN BUS DIAGNOSIS&lt;FOR 22 PINS TYPE CAN1 AND CAN2 CONNECTORS&gt;</toc_title>
+  </toc_items>
+  <euro5_items />
+  <index_items>
+    <subject>TROUBLESHOOTING</subject>
+  </index_items>
+</meta_info>

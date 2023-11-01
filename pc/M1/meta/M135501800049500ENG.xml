@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meta_info>
+  <resinfo_items>
+    <sie_id>M135501800049500</sie_id>
+    <sie_title>Code No. C104B FL inlet valve<break />Code No. C104F FR inlet valve<break />Code No. C1053 RL inlet valve<break />Code No. C1057 RR inlet valve<break />Code No. C105F FL outlet valve<break />Code No. C1063 FR outlet valve<break />Code No. C1067 RL outlet valve<break />Code No. C105B RR outlet valve<break />Code No. C1200 FL-RR cut valve<break />Code No. C1204 FR-RL cut valve<break />Code No. C1208 FL-RR suction valve<break />Code No. C120C FR-RL suction valve</sie_title>
+    <language>ENG</language>
+    <html_file>../html/M135501800049500ENG.html</html_file>
+    <original_destination id="004">General Export/Philippines/Egypt/Thailand/Vietnam/Peru</original_destination>
+    <model_year>19-20MY</model_year>
+    <document_type>M1</document_type>
+  </resinfo_items>
+  <toc_items>
+    <toc_group level="1">35 -SERVICE BRAKES</toc_group>
+    <toc_group level="2">35C-ACTIVE STABILITY CONTROL SYSTEM (ASC)</toc_group>
+    <toc_title level="1">TROUBLESHOOTING&lt;ASC-ECU&gt;</toc_title>
+    <toc_title level="2">DIAGNOSIS CODE PROCEDURES</toc_title>
+  </toc_items>
+  <euro5_items />
+  <index_items>
+    <subject>TROUBLESHOOTING&lt;ASC-ECU&gt;</subject>
+  </index_items>
+</meta_info>

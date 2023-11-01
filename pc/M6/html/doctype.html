@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="content-style-type" content="text/css" charset="utf-8"/>
+<meta http-equiv="content-script-type" content="text/javascript" charset="utf-8"/>
+<title>T&agrave;i liệu Sửa chữa Bảo dưỡng xe của Mitsubishi Motors</title>
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+<link type="text/css" href="../css/common.css" rel="stylesheet"/>
+<script type="text/javascript">
+var initialvalue = "";
+$(document).ready(function () {
+    initialvalue = $('select[name="doctype"]').val();
+});
+function opendoc() {
+    var value = $('select[name="doctype"]').val();
+    if (value != initialvalue) {
+        var parts = value.split(",");
+        var url = parts[0];
+        var hash = parts[1];
+        window.open(url, hash);
+        $('select[name="doctype"]').val(initialvalue);
+    }
+}
+</script>
+</head>
+<body>
+<div class="doctype">
+<div class="modelname">XPANDER</div>
+<div class="doctypesel"><div class="labelvalue"><div class="label">Loại</div><div class="value"><form name="doctype_form"><select name="doctype" onchange="opendoc()"><option value="../../M1/index/index.html,f1b40159efebcdab01985b44e9ea5018" >T&agrave;i liệu hướng dẫn Sửa chữa Bảo dưỡng</option><option value="../../M2/index/index.html,f1b40159efebcdab01985b44e9ea5018" >T&agrave;i liệu th&ocirc;ng tin Kỹ thuật</option><option value="../../M4/index/index.html,f1b40159efebcdab01985b44e9ea5018" >T&agrave;i liệu sửa chữa th&acirc;n xe</option><option value="../../M6/index/index.html,f1b40159efebcdab01985b44e9ea5018" selected>Kiểm tra trước khi giao xe v&agrave; Bảo dưỡng định kỳ</option></select></form></div></div></div>
+<div class="modelyear"><div class="labelvalue"><div class="label">Năm</div><div class="value">19-20MY</div></div></div>
+</div>
+</body>
+</html>

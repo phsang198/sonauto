@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="content-style-type" content="text/css"/>
+<meta http-equiv="content-script-type" content="text/javascript"/>
+<title>T&agrave;i liệu Sửa chữa Bảo dưỡng xe của Mitsubishi Motors</title>
+<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="../js/jstree.min.js"></script>
+<link type="text/css" href="../js/themes/default/style.min.css" rel="stylesheet" />
+<link type="text/css" href="../css/common.css" rel="stylesheet"/>
+<script type="text/javascript">
+$(document).ready(function () {
+    $('#outline').jstree({
+        "ui": { "select_limit": 1 },
+        "plugins" : [ "search" ]
+    });
+    $('#outline').bind("select_node.jstree", function (e, data) {
+        var href = data.node.a_attr.href;
+        if (href != "" && href != "#") {
+            parent.content.document.location.href = href;
+        }
+        else {
+            return data.instance.toggle_node(data.node);
+        }
+    });
+    $('#filter').keyup(function () {
+        filterOutline();
+    });
+    $('#filter').mouseup(function () {
+        filterOutline();
+    });
+});
+function openSIE(sieId) {
+    var href = "../html/" + sieId + ".html";
+    parent.content.document.location.href = href;
+}
+var to = false;
+function filterOutline() {
+    if (to) { clearTimeout(to); }
+    to = setTimeout(function () {
+        var v = $('#filter').val();
+        $('#outline').jstree(true).search(v);
+    }, 250);
+}
+</script>
+</head>
+<body>
+<input type="text" id="filter" value="" class="input" style="margin:0em auto 1em auto; width: 90%; display:block; padding:4px; border-radius:4px; border:1px solid silver;" />
+<div id="outline">
+<ul><li>0 -TỔNG QU&Aacute;T<ul><li id="M40000010A004100ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M40000010A004100ENG.html" target="content">NHẬN DẠNG XE</a></li><li id="M40000030A004300ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M40000030A004300ENG.html" target="content">C&Aacute;C TH&Ocirc;NG SỐ TI&Ecirc;U CHUẨN CH&Iacute;NH</a></li><li id="M400000400010000ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M400000400010000ENG.html" target="content">HỆ THỐNG HỖ TRỢ AN TO&Agrave;N (SRS)</a></li></ul></li><li>1  -CẤU TR&Uacute;C TH&Acirc;N XE<ul><li id="M401000100261400ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M401000100261400ENG.html" target="content">C&Aacute;C TH&Agrave;NH PHẦN CỦA TH&Acirc;N XE</a></li><li id="M401000200157300ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M401000200157300ENG.html" target="content">MẶT CẮT PHẦN TH&Acirc;N CH&Iacute;NH</a></li><li id="M401000500288700ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M401000500288700ENG.html" target="content">VỊ TR&Iacute; SỬ DỤNG C&Aacute;C MIẾNG GIẢM ỒN - SILENCER</a></li><li id="M401001800058000ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M401001800058000ENG.html" target="content">C&Aacute;C VỊ TR&Iacute; SỬ DỤNG FOAM, URETHANE FOAM</a></li><li id="M401000170017800ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M401000170017800ENG.html" target="content">VỊ TR&Iacute; SỬ DỤNG C&Aacute;C TH&Agrave;NH PHẦN GIA CƯỜNG</a></li></ul></li><li>2  -K&Iacute;CH THƯỚC TH&Acirc;N XE<ul><li id="M402000100061901ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M402000100061901ENG.html" target="content">K&Iacute;CH THƯỚC TH&Acirc;N XE V&Agrave; PHƯƠNG PH&Aacute;P ĐO</a></li><li>Kiểu A (K&iacute;ch thước h&igrave;nh chiếu)<ul><li id="M402000500282200ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M402000500282200ENG.html" target="content">PHẨN TH&Acirc;N DƯỚI</a></li></ul></li><li>Kiểu B (K&iacute;ch thước đo thực tế)<ul><li id="M402000500283300ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M402000500283300ENG.html" target="content">PHẨN TH&Acirc;N DƯỚI</a></li><li id="M402000600184400ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M402000600184400ENG.html" target="content">PHẦN TH&Acirc;N TRƯỚC</a></li><li id="M402000700152400ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M402000700152400ENG.html" target="content">CẠNH B&Ecirc;N CỦA TH&Acirc;N XE - SIDE BODY</a></li><li id="M402000800149700ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M402000800149700ENG.html" target="content">PHẦN TH&Acirc;N SAU - REAR BODY</a></li><li id="M402000900195100ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M402000900195100ENG.html" target="content">NỘI THẤT</a></li><li id="M402001700004900ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M402001700004900ENG.html" target="content">PHẦN TR&Ecirc;N CỦA GI&Aacute; ĐỠ Đ&Egrave;N ĐẦU</a></li></ul></li></ul></li><li>3  -THAY THẾ C&Aacute;C TẤM TH&Eacute;P H&Agrave;N<ul><li id="M403000280007301ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000280007301ENG.html" target="content">C&Aacute;C TẤM TH&Eacute;P SI&Ecirc;U CƯỜNG</a></li><li id="M403000400195700ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000400195700ENG.html" target="content">KHUNG V&Egrave; XE</a></li><li id="M403000010102600ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000010102600ENG.html" target="content">TH&Agrave;NH B&Ecirc;N TRƯỚC (THAY THẾ RI&Ecirc;NG LẺ)</a></li><li id="M403000500232800ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000500232800ENG.html" target="content">TRỤ TRƯỚC</a></li><li id="M403000600153300ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000600153300ENG.html" target="content">TRỤ GIỮ</a></li><li id="M403000700184800ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000700184800ENG.html" target="content">KHUNG H&Ocirc;NG XE</a></li><li id="M403000800159500ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000800159500ENG.html" target="content">KHUNG ĐU&Ocirc;I XE</a></li><li id="M403000030025400ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000030025400ENG.html" target="content">ỐP PH&Iacute;A SAU CỬA ĐU&Ocirc;I</a></li><li id="M403001000162200ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403001000162200ENG.html" target="content">S&Agrave;N XE PH&Iacute;A SAU - REAR FLOOR</a></li><li id="M40300110A001400ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M40300110A001400ENG.html" target="content">MUI XE - ROOF</a></li><li id="M40300120A001600ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M40300120A001600ENG.html" target="content">ỐP TRONG G&Oacute;C 1/4</a></li><li id="M403000110051000ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000110051000ENG.html" target="content">ỐP G&Oacute;C 1/4 DƯỚI</a></li><li id="M403000300066100ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000300066100ENG.html" target="content">GI&Aacute; ĐỠ Đ&Egrave;N ĐẦU - HEADLAMP SUPPORT</a></li><li id="M403000150117900ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000150117900ENG.html" target="content">TẤM ỐP CỬA TRƯỚC B&Ecirc;N NGO&Agrave;I (LOẠI H&Agrave;N)</a></li><li id="M403000170124700ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000170124700ENG.html" target="content">FRONT DOOR OUTER PANEL (LOẠI D&Aacute;N BẰNG KEO)</a></li><li id="M403000160092400ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000160092400ENG.html" target="content">REAR DOOR OUTER PANEL (LOẠI H&Agrave;N)</a></li><li id="M403000180090600ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M403000180090600ENG.html" target="content">REAR DOOR OUTER PANEL (LOẠI D&Aacute;N BẰNG KEO)</a></li></ul></li><li>4  -TH&Agrave;NH PHẦN CH&Oacute;NG ĂN M&Ograve;N<ul><li id="M404000100288800ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M404000100288800ENG.html" target="content">C&Aacute;C VỊ TR&Iacute; B&Ocirc;I KEO TH&Acirc;N XE</a></li><li id="M40400020A000400ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M40400020A000400ENG.html" target="content">C&Aacute;C VỊ TR&Iacute; LỚP L&Oacute;T CHỐNG ĂN M&Ograve;N</a></li><li id="M404000300190000ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M404000300190000ENG.html" target="content">VỊ TR&Iacute; SỬ DỤNG LỚP L&Oacute;T B&Ecirc;N DƯỚI</a></li><li id="M404000800031100ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M404000800031100ENG.html" target="content">C&Aacute;C VỊ TR&Iacute; BƠM S&Aacute;P</a></li></ul></li><li>5- C&Aacute;C CHI TIẾT NHỰA NH&Acirc;N TẠO<ul><li id="M40500010A001900ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M40500010A001900ENG.html" target="content">VỊ TR&Iacute; CỦA NHỮNG CHI TIẾT BẰNG NHƯA TỔNG HỢP</a></li></ul></li><li>6  -M&Agrave;U TH&Acirc;N XE<ul><li id="M406000100169400ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M406000100169400ENG.html" target="content">M&Atilde; M&Agrave;U TH&Acirc;N XE</a></li><li id="M40600020A005000ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M40600020A005000ENG.html" target="content">BẢNG M&Agrave;U TH&Acirc;N XE</a></li><li>M&Agrave;U TH&Acirc;N XE<ul><li id="M406001500084300ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M406001500084300ENG.html" target="content">ĐẦU TRƯỚC</a></li><li id="M406001200107400ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M406001200107400ENG.html" target="content">BUỒNG B&Aacute;NH XE</a></li><li id="M40600005A001100ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M40600005A001100ENG.html" target="content">CẢN TRƯỚC</a></li><li id="M40600003A000800ENG" class="link" data-jstree='{"icon":"jstree-file"}'><a href="M40600003A000800ENG.html" target="content">CẢN SAU</a></li></ul></li></ul></li></ul>
+</div>
+</body>
+</html>
